@@ -17,7 +17,7 @@ while True:
         msg = connectedSock.recv(1024).decode()
     except:
         connectedSock.close()        
-    message = "The band " + msg + " Suck ASS"
+    message = "The band " + msg + " Sucks"
 
     connectedSock.sendall(message.encode())
     
